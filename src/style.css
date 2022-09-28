@@ -114,3 +114,17 @@ button {
 .main-content {
     font-family: 'Amatic SC', cursive;
 }
+
+.home {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.8rem;
+    height: 50vh;
+    gap: 1rem;
+}
+
+table {
+    font-size: 1.5rem;
+}

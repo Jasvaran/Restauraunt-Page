@@ -1,5 +1,6 @@
 import './style.css';
 import renderHomeContent from './home';
+import renderMenu from './menu';
 
 
 function createNav() {
@@ -11,13 +12,28 @@ function createNav() {
     navArray.forEach((element, index) => {
         let navItem = document.createElement('button');
         navItem.textContent = element;
-        navItem.classList.add('nav-item');
-        navItem.setAttribute('data-key', index);
+        navItem.classList.add(`${index}`);
+        navItem.setAttribute('id', index);
+
+        navItem.addEventListener('click', (e) => {
+            console.log(e.target.id);
+            if (e.target.id == 0){
+                renderHomeContent();
+            }
+            else if (e.target.id == 1) {
+                renderMenu();
+            }
+            
+        })
 
         navList.appendChild(navItem);
+
+
         
     });
     nav.appendChild(navList);
+
+
     return nav;
 };
 
@@ -53,7 +69,8 @@ function initializeWebSite() {
 
     content.appendChild(createHeader());
     content.appendChild(createMainContent());
-    renderHomeContent();
+    
+
 
 
     
