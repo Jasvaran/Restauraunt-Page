@@ -80,6 +80,7 @@ table {
     font-family: 'MonteCarlo', cursive;
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100%;
     background-color: var(--background-dark);
     padding: 2rem;
@@ -90,6 +91,24 @@ table {
 .restaurant-name{
     font-size: 6rem;
     color: var(--font-color);
+}
+
+nav {
+    width: 50%;
+    margin-top: 2rem;
+}
+nav > ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+button {
+    font-family: 'MonteCarlo', cursive;
+    font-size: 2.4rem;
+    color: var(--font-color);
+    background: none;
+    border: none;
 }
 
 .main-content {
