@@ -1,6 +1,9 @@
 import './style.css';
 import renderHomeContent from './home';
 import renderMenu from './menu';
+import renderContact from './contact';
+
+
 
 
 function createNav() {
@@ -23,6 +26,10 @@ function createNav() {
             else if (e.target.id == 1) {
                 renderMenu();
             }
+            else if (e.target.id == 2) {
+                renderContact();
+            }
+            
             
         })
 
@@ -62,6 +69,13 @@ function createMainContent() {
     return main;
 }
 
+function createFooter() {
+    let footerDiv = document.createElement('footer');
+    footerDiv.classList.add('footer-div')
+    footerDiv.textContent = 'COPYRIGHT'
+    return footerDiv
+}
+
 
 
 function initializeWebSite() {
@@ -69,6 +83,7 @@ function initializeWebSite() {
 
     content.appendChild(createHeader());
     content.appendChild(createMainContent());
+    content.appendChild(createFooter());
     
 
 

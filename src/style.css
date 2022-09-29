@@ -71,9 +71,19 @@ q:before, q:after {
 }
 table {
 	border-collapse: collapse;
+    width: 50%;
 	border-spacing: 0;
+    font-size: 2.5rem;
+}
+th, td {
+    padding-right: 30px;
 }
 
+.menu-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .header {
     font-size: 2.4rem;
@@ -113,6 +123,7 @@ button {
 
 .main-content {
     font-family: 'Amatic SC', cursive;
+
 }
 
 .home {
@@ -125,6 +136,26 @@ button {
     gap: 1rem;
 }
 
-table {
-    font-size: 1.5rem;
+
+
+
+span {
+    font-size: 14px;
+}
+
+.home-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 4rem;
+    font-size: 2.4rem;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
 }
